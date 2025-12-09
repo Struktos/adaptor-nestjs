@@ -1,0 +1,78 @@
+{
+  "name": "@struktos/adapter-nestjs",
+  "version": "0.1.0",
+  "description": "NestJS adapter for Struktos.js - Enterprise-grade context propagation, authentication, and logging for NestJS applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "release": "./scripts/release.sh",
+    "release:patch": "./scripts/release.sh patch",
+    "release:minor": "./scripts/release.sh minor",
+    "release:major": "./scripts/release.sh major"
+  },
+  "keywords": [
+    "struktos",
+    "nestjs",
+    "adapter",
+    "context",
+    "authentication",
+    "authorization",
+    "guard",
+    "decorator",
+    "middleware",
+    "typescript",
+    "enterprise"
+  ],
+  "author": "Struktos.js Team",
+  "license": "MIT",
+  "peerDependencies": {
+    "@nestjs/common": "^10.0.0 || ^11.0.0",
+    "@nestjs/core": "^10.0.0 || ^11.0.0",
+    "@struktos/core": "^0.1.0",
+    "@struktos/auth": "^0.1.0",
+    "@struktos/logger": "^0.1.0",
+    "reflect-metadata": "^0.1.13 || ^0.2.0"
+  },
+  "peerDependenciesMeta": {
+    "@struktos/auth": {
+      "optional": true
+    },
+    "@struktos/logger": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/platform-express": "^11.0.0",
+    "@nestjs/testing": "^11.0.0",
+    "@struktos/core": "^0.1.0",
+    "@struktos/auth": "^0.1.0",
+    "@struktos/logger": "^0.1.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20.19.25",
+    "express": "^5.0.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/struktos/adapter-nestjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/struktos/adapter-nestjs/issues"
+  },
+  "homepage": "https://github.com/struktos/adapter-nestjs#readme"
+}
