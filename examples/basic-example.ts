@@ -36,7 +36,7 @@ import {
   StruktosContextInterceptor,
   NestJSContextData,
   AUTH_SERVICE,
-} from "../dist/src";
+} from "../src/index";
 
 // ==================== Types ====================
 
